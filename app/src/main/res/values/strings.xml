@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Language-Facts</string>
+    <string name="button_login">LOGIN</string>
+    <string name="cancel_button">CANCEL</string>
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+
+</resources>
