@@ -20,12 +20,12 @@ class LoginActivity : AppCompatActivity() {
         val password = findViewById<TextInputEditText>(R.id.password_edit_text)
         val logInButton = findViewById<MaterialButton>(R.id.login_button)
 
-        logInButton.setOnClickListener(){
-            if (email.toString().isNullOrEmpty() || password.toString().isNullOrEmpty()){
+        logInButton.setOnClickListener {
+            if (email.text.toString().isEmpty() || password.text.toString().isEmpty()){
                 Toast.makeText(this,"Email or Password is not provided", Toast.LENGTH_LONG).show()
             } else {
-                if (email.toString() == "user@email.com" && password.toString() == "09876"){
-                    val intent = Intent(this, ViewActivity::class.java)
+                if (email.text.toString() == "user@email.com" && password.text.toString() == "09876"){
+                    val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 } else{
                     Toast.makeText(this,"Wrong Email or Password", Toast.LENGTH_LONG).show()
