@@ -1,4 +1,4 @@
-# Language-Facts
+# ECOWAS-Facts
 A basic android app that displays some facts about member countries of the Economic Community Of West African States (ECOWAS).
 
 # Dummy Login Details
