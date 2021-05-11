@@ -1,13 +1,14 @@
-package com.example.language_facts
+package com.example.ecowas_facts
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.language_facts.databinding.ActivityMainBinding
+import com.example.ecowas_facts.databinding.ActivityMainBinding
+
 
 class MainActivity : AppCompatActivity() {
 
-    var binding:ActivityMainBinding? = null
-    var adapter:FactAdapter? = null
+    private var binding: ActivityMainBinding? = null
+    private var adapter:FactAdapter? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)

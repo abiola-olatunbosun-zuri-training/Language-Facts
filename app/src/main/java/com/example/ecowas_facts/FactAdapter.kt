@@ -1,4 +1,4 @@
-package com.example.language_facts
+package com.example.ecowas_facts
 
 import android.content.Context
 import android.content.Intent

@@ -1,4 +1,4 @@
-package com.example.language_facts
+package com.example.ecowas_facts
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

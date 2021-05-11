@@ -1,9 +1,8 @@
-package com.example.language_facts
+package com.example.ecowas_facts
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.example.language_facts.databinding.ActivityDetailBinding
-import com.example.language_facts.databinding.ActivityMainBinding
+import com.example.ecowas_facts.databinding.ActivityDetailBinding
 
 class DetailActivity : AppCompatActivity() {
     private var binding:ActivityDetailBinding? = null
