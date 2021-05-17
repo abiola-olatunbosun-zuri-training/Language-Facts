@@ -19,6 +19,7 @@ class LoginActivity : AppCompatActivity() {
         val email = findViewById<TextInputEditText>(R.id.email_edit_text)
         val password = findViewById<TextInputEditText>(R.id.password_edit_text)
         val logInButton = findViewById<MaterialButton>(R.id.login_button)
+        val cancelButton = findViewById<MaterialButton>(R.id.cancel_button)
 
         logInButton.setOnClickListener {
             if (email.text.toString().isEmpty() || password.text.toString().isEmpty()){
@@ -27,11 +28,27 @@ class LoginActivity : AppCompatActivity() {
                 if (email.text.toString() == "user@email.com" && password.text.toString() == "09876"){
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
-                } else{
+                } else {
                     Toast.makeText(this,"Wrong Email or Password", Toast.LENGTH_LONG).show()
                 }
             }
         }
 
+        cancelButton.setOnClickListener {
+            if (email.text.toString().isEmpty() || password.text.toString().isEmpty()){
+                email.setText("")
+                password.setText("")
+
+                if (email.text.toString().isEmpty() && password.text.toString().isEmpty()){
+                    Toast.makeText(this,"No Login details provided", Toast.LENGTH_LONG).show()
+                }
+            } else if (email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty()){
+                email.setText("")
+                password.setText("")
+            }
+
+            }
+        }
+
     }
-}
+
