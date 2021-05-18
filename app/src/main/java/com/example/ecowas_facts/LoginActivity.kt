@@ -40,7 +40,7 @@ class LoginActivity : AppCompatActivity() {
                 password.setText("")
 
                 if (email.text.toString().isEmpty() && password.text.toString().isEmpty()){
-                    Toast.makeText(this,"No Login details provided", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this,"Email and Password field already empty", Toast.LENGTH_LONG).show()
                 }
             } else if (email.text.toString().isNotEmpty() && password.text.toString().isNotEmpty()){
                 email.setText("")
