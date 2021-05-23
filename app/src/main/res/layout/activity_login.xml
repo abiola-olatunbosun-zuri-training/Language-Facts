@@ -23,6 +23,7 @@
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_margin="4dp"
+       app:startIconDrawable="@drawable/ic_baseline_email_24"
        android:hint="@string/hint_email">
 
        <com.google.android.material.textfield.TextInputEditText
@@ -38,6 +39,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="4dp"
         app:passwordToggleEnabled="true"
+        app:startIconDrawable="@drawable/ic_baseline_vpn_key_24"
         android:hint="@string/hint_password">
 
         <com.google.android.material.textfield.TextInputEditText
